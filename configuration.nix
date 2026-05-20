@@ -85,7 +85,7 @@
 		};
 		thunar = {
 			enable = true;
-			plugins = pkgs.xfce.thunar-archive-plugin;
+			plugins = with pkgs.xfce; [ thunar-archive-plugin ];
 		};
 		steam.enable = true;
 	};
