@@ -4,7 +4,7 @@
 	programs.vscode = {
 		enable = true;
 		mutableExtensionsDir = false;
-		profiles.novoseiria = {
+		profiles.default = {
 			extensions = with pkgs.vscode-extensions; [
 				johnpapa.winteriscoming
 				eamodio.gitlens
