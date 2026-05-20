@@ -7,3 +7,13 @@
 !/flake.nix
 !/configuration.nix
 !/hardware-configuration.nix
+
+!/novoseiria.nix
+!/novoseiria/
+!/novoseiria/i3.nix
+!/novoseiria/git.nix
+!/novoseiria/firefox.nix
+!/novoseiria/vscode.nix
+!/novoseiria/easyeffects.nix
+!/novoseiria/mpd.nix
+!/novoseiria/flatpak.nix
