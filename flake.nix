@@ -29,6 +29,10 @@
 							nix-flatpak.homeManagerModules.nix-flatpak
 							./novoseiria.nix
 						];
+						extraSpecialArgs = {
+							terminal = "kitty";
+							modifier = "Mod4";
+						};
 					};
 				}
 			];

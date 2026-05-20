@@ -1,8 +1,6 @@
-{ config, pkgs, ... }:
+{ config, pkgs, terminal, ... }:
 
-let
-	terminal = "kitty";
-in {
+{
 	home = {
 		stateVersion = "26.05";
 		username = "novoseiria";

@@ -1,4 +1,4 @@
-{ config, ... }:
+{ config, terminal, modifier, ... }:
 
 {
 	xsession.windowManager.i3 = {
@@ -11,9 +11,7 @@
 			};
 			inherit terminal;
 			modifier = "Mod4";
-			keybindings = let
-				modifier = config.xsession.windowManager.i3.config.modifier;
-			in {
+			keybindings = {
 				"XF86AudioRaiseVolume" = "exec --no-startup-id wpctl set-volume @DEFAULT_SINK@ 5%+ --limit 1";
 				"XF86AudioLowerVolume" = "exec --no-startup-id wpctl set-volume @DEFAULT_SINK@ 5%- --limit 0";
 				"XF86AudioMute" = "exec --no-startup-id wpctl set-mute @DEFAULT_SINK@ toggle";
