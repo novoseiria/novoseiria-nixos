@@ -35,6 +35,8 @@
 						};
 					};
 				}
+
+				nur.modules.nixos.default
 			];
 		};
 	};
