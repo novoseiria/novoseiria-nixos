@@ -94,12 +94,12 @@
 			};
 		};
 
-		mpd-discord-rpc.enable = true;
-
 		rmpc.enable = true;
 
 		feh.enable = true;
 	};
+
+	services.mpd-discord-rpc.enable = true;
 
 	imports = [
 		./novoseiria/i3.nix
