@@ -1,0 +1,31 @@
+{
+	inputs = {
+		nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+
+		home-manager = {
+			url = "github:nix-community/home-manager";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
+
+		nix-flatpak.url = "github:gmodena/nix-flatpak";
+	};
+
+	outputs = inputs@{ nixpkgs, home-manager, nix-flatpak, ... }: {
+		nixosConfigurations.novoseiria-nixos = nixpkgs.lib.nixosSystem {
+			modules = [
+				./configuration.nix
+				home-manager.nixosModules.home-manager {
+					home-manager = {
+						backupFileExtension = "backup";
+						useGlobalPkgs =  true;
+						useUserPackages = true;
+						users.novoseiria.imports = [
+							nix-flatpak.homeManagerModules.nix-flatpak
+							./novoseiria.nix
+						];
+					};
+				}
+			];
+		};
+	};
+}

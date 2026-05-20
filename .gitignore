@@ -3,3 +3,7 @@
 !/.gitignore
 !/LICENSE
 !/README.md
+
+!/flake.nix
+!/configuration.nix
+!/hardware-configuration.nix
