@@ -82,5 +82,5 @@
 			plugins = pkgs.xfce.thnunar-archive-plugin;
 		};
 		steam.enable = true;
-	}
+	};
 }
