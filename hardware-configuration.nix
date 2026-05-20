@@ -22,7 +22,7 @@
 	};
 
 	fileSystems."/home/novoseiria/archive" = {
-		device = "/dev/disk/by-label/other";
+		device = "/dev/disk/by-label/archive";
 		fsType = "ext4";
 	};
 
