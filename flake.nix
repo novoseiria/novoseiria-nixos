@@ -8,12 +8,18 @@
 		};
 
 		nix-flatpak.url = "github:gmodena/nix-flatpak";
+
+		nur = {
+			url = "github:nix-community/NUR";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
 	};
 
-	outputs = inputs@{ nixpkgs, home-manager, nix-flatpak, ... }: {
+	outputs = inputs@{ nixpkgs, home-manager, nix-flatpak, nur, ... }: {
 		nixosConfigurations.novoseiria-nixos = nixpkgs.lib.nixosSystem {
 			modules = [
 				./configuration.nix
+
 				home-manager.nixosModules.home-manager {
 					home-manager = {
 						backupFileExtension = "backup";
