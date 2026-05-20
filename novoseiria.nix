@@ -10,7 +10,7 @@
 			iosevka
 			noto-fonts
 			noto-fonts-cjk-sans
-			novo-fonts-color-emoji
+			noto-fonts-color-emoji
 
 			# downloads
 			qbittorrent
