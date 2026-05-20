@@ -53,6 +53,7 @@
 			peazip
 			ungoogled-chromium
 			ltspice
+			xclicker
 		];
 
 		file = {
