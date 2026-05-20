@@ -111,5 +111,5 @@ in {
 		./novoseiria/easyeffects.nix
 		./novoseiria/mpd.nix
 		./novoseiria/flatpak.nix
-	]
+	];
 }
