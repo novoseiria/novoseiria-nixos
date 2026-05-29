@@ -63,6 +63,10 @@
 	};
 
 	services = {
+		libinput.touchpad = {
+			tapping = false;
+			disableWhileTyping = true;
+		};
 		openssh.enable = true;
 		xserver = {
 			enable = true;
