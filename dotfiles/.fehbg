@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+/etc/profiles/per-user/novoseiria/bin/feh --no-fehbg --bg-scale '/home/novoseiria/bg.png'
