@@ -46,6 +46,7 @@
 							./novoseiria.nix
 						];
 						extraSpecialArgs = {
+							inherit inputs;
 							terminal = "kitty";
 							modifier = "Mod4";
 						};
