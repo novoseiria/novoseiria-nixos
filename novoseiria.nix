@@ -108,10 +108,11 @@
 	imports = [
 		./novoseiria/i3.nix
 		./novoseiria/git.nix
-		./novoseiria/firefox.nix
-		./novoseiria/vscode.nix
 		./novoseiria/easyeffects.nix
-		./novoseiria/mpd.nix
+		./novoseiria/firefox.nix
 		./novoseiria/flatpak.nix
+		./novoseiria/mpd.nix
+		./novoseiria/spicetify.nix
+		./novoseiria/vscode.nix
 	];
 }

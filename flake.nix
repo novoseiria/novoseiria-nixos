@@ -18,9 +18,19 @@
 			url = "github:ezKEa/aagl-gtk-on-nix/release-26.05";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
+
+		spicetify-nix.url = "github:Gerg-L/spicetify-nix";
 	};
 
-	outputs = inputs@{ nixpkgs, home-manager, nix-flatpak, nur, aagl, ... }: {
+	outputs = inputs@{
+		nixpkgs,
+		home-manager,
+		nix-flatpak,
+		nur,
+		aagl,
+		spicetify-nix,
+		...
+	}: {
 		nixosConfigurations.novoseiria-nixos = nixpkgs.lib.nixosSystem {
 			modules = [
 				./configuration.nix
@@ -32,6 +42,7 @@
 						useUserPackages = true;
 						users.novoseiria.imports = [
 							nix-flatpak.homeManagerModules.nix-flatpak
+							spicetify-nix.homeManagerModules.spicetify
 							./novoseiria.nix
 						];
 						extraSpecialArgs = {
