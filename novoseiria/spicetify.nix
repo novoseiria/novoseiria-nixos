@@ -15,6 +15,6 @@ in {
 			queueTime
 			shuffle
 			volumePercentage
-		]
+		];
 	};
 }
