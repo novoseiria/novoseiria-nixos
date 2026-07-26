@@ -24,7 +24,7 @@
 				"editor.inlayHints.enabled" = "offUnlessPressed";
 				"editor.insertSpaces" = false;
 				"editor.renderWhitespace" = "all";
-				"editor.rulers" = [ 80 ];
+				"editor.rulers" = [ 100 ];
 				"workbench.colorTheme" = "Winter is Coming (Dark Blue)";
 				"workbench.tree.indent" = 20;
 				"files.insertFinalNewline" = true;
